@@ -40,7 +40,7 @@ cd ultra-tidy
 open "dist/Ultra Tidy.app"
 ```
 
-Grant access to Photos when macOS asks, then click **Scan** / **Сканировать**. If you grant limited access, only the selected photos can be scanned. Large libraries and iCloud-only originals may take longer to process.
+Grant access to Photos when macOS asks, then start a scan in the app. If you grant limited access, only the selected photos can be scanned. Large libraries and iCloud-only originals may take longer to process.
 
 1. Choose a group in the sidebar.
 2. Pinch on the trackpad or use the slider to make thumbnails larger.
@@ -64,7 +64,3 @@ This is approximate matching, so heavily cropped or edited copies may be missed,
 | [`build-app.sh`](build-app.sh) | Build and ad-hoc sign the macOS app |
 
 Run the Rust tests with `cargo test`.
-
-## По-русски
-
-Ultra Tidy помогает разобрать похожие фотографии в медиатеке Apple Photos и iCloud Photos. Снимки показаны крупной сеткой; ненужные можно отметить и удалить одним пакетом после системного подтверждения. Сходство считает Rust, интерфейс написан на SwiftUI. Приложение не удаляет ничего автоматически.
