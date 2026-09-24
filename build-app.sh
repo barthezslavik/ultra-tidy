@@ -2,7 +2,7 @@
 set -euo pipefail
 
 cd "${0:A:h}"
-export CARGO_TARGET_DIR="${CARGO_TARGET_DIR:-/Users/slavik/.cargo-target/ultra-tidy}"
+export CARGO_TARGET_DIR="${CARGO_TARGET_DIR:-$PWD/target}"
 export CLANG_MODULE_CACHE_PATH="$CARGO_TARGET_DIR/clang-module-cache"
 mkdir -p "$CLANG_MODULE_CACHE_PATH" "$CARGO_TARGET_DIR/swift-module-cache"
 cargo build --release
